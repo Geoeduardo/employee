@@ -32,3 +32,5 @@ function displayHREmployees() {
         document.getElementById('employeesDetails').innerHTML = 'no employee has been found with this ID';
 
       }
+}
+
