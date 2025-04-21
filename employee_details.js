@@ -15,3 +15,9 @@ const totalEmployees = employees.map((employee, index) => `<p>${employee.id}: ${
             alert(`Total Salaries: $${totalSalaries}`);
           }
 
+//  function to display employees details based on department such as the HR
+function displayHREmployees() {
+      const hrEmployees = employees.filter(employee => employee.department === 'HR');
+       const hrEmployeesDisplay = hrEmployees.map((employee, index) => `<p>${employee.id}: ${employee.name}: ${employee.name} - ${employee.department} - $${employee.salary}</p>`).join('');
+       document.getElementById('employeesDetails').innerHTML = hrEmployeesDisplay;
+ }
